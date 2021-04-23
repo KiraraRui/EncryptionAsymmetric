@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace EncryptionAsymmetric
 {
-    class RSAkeyCSP
+    class Encryptor
     {
-        
+        RSACryptoServiceProvider cryptoServiceProvider;
+
+
     }
 }
