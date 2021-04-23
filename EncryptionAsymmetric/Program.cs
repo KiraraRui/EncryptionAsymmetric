@@ -10,7 +10,7 @@ namespace EncryptionAsymmetric
     {
         static void Main(string[] args)
         {
-            // ama do it ina  bit for now a need a break like just 2 hours pleaze.
+            //
         }
     }
 }
