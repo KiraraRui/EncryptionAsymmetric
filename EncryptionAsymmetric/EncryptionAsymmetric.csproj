@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSAkeyCSP.cs" />
+    <Compile Include="RSAkeyParam.cs" />
+    <Compile Include="RSAkeyXML.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

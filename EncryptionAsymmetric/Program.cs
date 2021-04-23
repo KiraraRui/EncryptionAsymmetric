@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EncryptionAsymmetric
+﻿namespace EncryptionAsymmetric
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            //
+
+
+
         }
     }
 }
+
+
