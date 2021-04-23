@@ -31,7 +31,7 @@ namespace EncryptionAsymmetric
                            +------------------------------------+ ");
 
                 string userInput = "";
-                string encryptedText = null;
+                byte[] encryptedText = null;
 
                 if (userInput == "1")
                 {
@@ -48,7 +48,7 @@ namespace EncryptionAsymmetric
                     //text --> encrypt
                     Console.WriteLine("Write your text");
                     userInput = Console.ReadLine();
-                    encryptedText = RSA.Encrypt(path + @"\PublicKey", Encoding.UTF8.GetBytes(userInput));
+                    encryptedText = RSA.Encrypt(path + @"..\..\PublicKey", Encoding.UTF8.GetBytes(userInput));
                     Console.Clear();
                 }
 
