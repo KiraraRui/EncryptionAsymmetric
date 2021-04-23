@@ -4,10 +4,11 @@ namespace EncryptionAsymmetric
 {
     class RSAkeyCSP
     {
-
         private string ContainerName = "Container";
 
-        private RSACryptoServiceProvider _cryptoServiceProvider;
+        private RSACryptoServiceProvider cryptoServiceProvider;
+
+        public RSAParameters key;
 
         public void AsignNewKey()
         {
@@ -15,6 +16,7 @@ namespace EncryptionAsymmetric
             cspParams.KeyContainerName = ContainerName;
             cspParams.Flags = CspProviderFlags.UseMachineKeyStore;
             cspParams.ProviderName = "Microsoft Strong Cryptographic Provider";
+            key = RSA.Create().ExportParameters(false);
 
         }
 
@@ -22,9 +24,9 @@ namespace EncryptionAsymmetric
         {
             byte[] cipherbytes;
 
-            using (_cryptoServiceProvider) // var rsa = new RSACryptoServiceProvider()
+            using ( var rsa = new RSACryptoServiceProvider())
             {
-                cipherbytes = _cryptoServiceProvider.Encrypt(data, false);
+                cipherbytes = cryptoServiceProvider.Encrypt(data, false);
           
                 RSAParameters rSAParameters = new RSAParameters();
                 rSAParameters.Exponent = exponent;
@@ -41,9 +43,9 @@ namespace EncryptionAsymmetric
         {
             byte[] chiperBytes;
 
-            using (_cryptoServiceProvider)
+            using (cryptoServiceProvider)
             {
-                chiperBytes = _cryptoServiceProvider.Decrypt(data, true);
+                chiperBytes = cryptoServiceProvider.Decrypt(data, true);
             }
 
             return chiperBytes;

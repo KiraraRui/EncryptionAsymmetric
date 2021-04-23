@@ -1,0 +1,7 @@
+C:\Users\kirak\source\repos\EncryptionAsymmetric\EncryptionAsymmetric\bin\Debug\EncryptionAsymmetric.exe.config
+C:\Users\kirak\source\repos\EncryptionAsymmetric\EncryptionAsymmetric\bin\Debug\EncryptionAsymmetric.exe
+C:\Users\kirak\source\repos\EncryptionAsymmetric\EncryptionAsymmetric\bin\Debug\EncryptionAsymmetric.pdb
+C:\Users\kirak\source\repos\EncryptionAsymmetric\EncryptionAsymmetric\obj\Debug\EncryptionAsymmetric.csprojAssemblyReference.cache
+C:\Users\kirak\source\repos\EncryptionAsymmetric\EncryptionAsymmetric\obj\Debug\EncryptionAsymmetric.csproj.CoreCompileInputs.cache
+C:\Users\kirak\source\repos\EncryptionAsymmetric\EncryptionAsymmetric\obj\Debug\EncryptionAsymmetric.exe
+C:\Users\kirak\source\repos\EncryptionAsymmetric\EncryptionAsymmetric\obj\Debug\EncryptionAsymmetric.pdb

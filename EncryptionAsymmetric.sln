@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encrypt", "Encrypt", "{7BA8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decrypt", "Decrypt", "{CE3B7E56-96C2-4054-B58E-633582277368}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecryptionAsymmetric", "DecryptionAsymmetric\DecryptionAsymmetric.csproj", "{8844F600-46B9-45B0-8115-39E85C52FA77}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XmlKeys", "XmlKeys", "{179A542E-5ACF-4681-B010-CF1F27BB1677}"
 	ProjectSection(SolutionItems) = preProject
 		PrivateKey.xml = PrivateKey.xml
@@ -27,17 +25,12 @@ Global
 		{79BF4DA2-27DF-40F5-B5FD-CE6D33460F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79BF4DA2-27DF-40F5-B5FD-CE6D33460F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79BF4DA2-27DF-40F5-B5FD-CE6D33460F2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8844F600-46B9-45B0-8115-39E85C52FA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8844F600-46B9-45B0-8115-39E85C52FA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8844F600-46B9-45B0-8115-39E85C52FA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8844F600-46B9-45B0-8115-39E85C52FA77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{79BF4DA2-27DF-40F5-B5FD-CE6D33460F2A} = {7BA86680-06F5-4A44-9456-82C6EF7D8A5D}
-		{8844F600-46B9-45B0-8115-39E85C52FA77} = {CE3B7E56-96C2-4054-B58E-633582277368}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C69F6207-5F36-4756-8E5B-3BBA535BA504}
