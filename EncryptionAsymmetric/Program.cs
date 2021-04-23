@@ -12,8 +12,8 @@ namespace EncryptionAsymmetric
             string path = @"..\..\..\XmlKeys";
             bool isRunning = true;
 
-                while (isRunning)
-                {
+            while (isRunning)
+            {
 
                 Console.Clear();
                 Console.WriteLine("ASymmectric Encryption & Decryption by RSA\n");
@@ -31,7 +31,7 @@ namespace EncryptionAsymmetric
                            +------------------------------------+ ");
 
                 string userInput = "";
-                byte[] encryptedText = null;
+                string encryptedText = null;
 
                 if (userInput == "1")
                 {
@@ -45,14 +45,10 @@ namespace EncryptionAsymmetric
                                           $"Modulus: {BitConverter.ToString(rsa.ExportParameters(false).Modulus)}\n");
                     }
 
-                //text --> encrypt
-                Console.WriteLine("Write your text");
+                    //text --> encrypt
+                    Console.WriteLine("Write your text");
                     userInput = Console.ReadLine();
                     encryptedText = RSA.Encrypt(path + @"\PublicKey", Encoding.UTF8.GetBytes(userInput));
-
-                    
-                    //File.WriteAllBytes(path + @"\" + DateTime.Now.Ticks + ".txt", encryptedText);
-
                     Console.Clear();
                 }
 
@@ -60,11 +56,11 @@ namespace EncryptionAsymmetric
                 {
                     isRunning = false;
                 }
-                }
             }
-
         }
+
     }
+}
 
 
 
