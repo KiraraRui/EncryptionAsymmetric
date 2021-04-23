@@ -24,10 +24,10 @@ namespace EncryptionAsymmetric
         {
             byte[] cipherbytes;
 
-            using ( var rsa = new RSACryptoServiceProvider())
+            using (var rsa = new RSACryptoServiceProvider())
             {
                 cipherbytes = cryptoServiceProvider.Encrypt(data, false);
-          
+
                 RSAParameters rSAParameters = new RSAParameters();
                 rSAParameters.Exponent = exponent;
                 rSAParameters.Modulus = modulus;
